@@ -1,2 +1,3 @@
 # Luxtronik-SHI-Modbus
-Luxtronic 2.1 Modbus SHI mapping
+
+Smart home interface (SHI) available from sw release V3.92.0
