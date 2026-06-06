@@ -8,7 +8,10 @@ To reset control, write value outside range
 | 10000    | Heating mode                         |      |            | 0:Off 1:Setpoint 2:Offset 3:Level            |
 | 10001    | Heating setpoint                     | °C   | 10         |                                              |
 | 10002    | Heating offset                       | °K   | 10         | -50..50 (-5.0K..+5.0K)                       |
-| 10003    | Heating level                        |      |            | 0..3                                         |
+| 10003    | Heating level                        |      |            | 0: normal                                    |
+|          |                                      |      |            | 1: Increased                                 |
+|          |                                      |      |            | 2: Increased w/o time schedules              |
+|          |                                      |      |            | 3: Decreased                                 |
 +----------+--------------------------------------+------+------------+----------------------------------------------+
 | 10005    | DHW mode                             |      |            | 0:Off 1:Setpoint 2:Offset 3:Level            |
 | 10006    | DHW setpoint                         | °C   | 10         |                                              |
@@ -42,7 +45,7 @@ To reset control, write value outside range
 | 10036    | Mix Circuit 3 cooling setpoint       |      |            |                                              |
 | 10037    | Mix Circuit 3 cooling level          |      |            | 0..3                                         |
 +----------+--------------------------------------+------+------------+----------------------------------------------+
-| 10040    | LPC Mode                             |      |            |                                              |
+| 10040    | LPC Mode                             |      |            | 0: No limit 1: Soft limit 2: Hard limit      |
 | 10041    | PC Limit                             | kW   | 10         | ..300 (30kW)                                 |
 +----------+--------------------------------------+------+------------+----------------------------------------------+
 | 10050    | Heating blocked                      |      |            | 0=off, 1=on                                  |
@@ -50,7 +53,7 @@ To reset control, write value outside range
 | 10052    | Cooling blocked                      |      |            | 0=off, 1=on                                  |
 | 10053    | Pool blocked                         |      |            | 0=off, 1=on                                  |
 +----------+--------------------------------------+------+------------+----------------------------------------------+
-| 10060    | Unknown                              |      |            |                                              |
+| 10060    | RBE Room Temperature Setpoint        |      |            |                                              |
 +----------+--------------------------------------+------+------------+----------------------------------------------+
 | 10065    | Mode overall heating                 |      |            |                                              |
 | 10066    | Offset overall heating               | °K   | 10         | -50..50 (-5.0K..+5.0K)                       |
